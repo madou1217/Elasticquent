@@ -18,21 +18,26 @@
   ],
   "require": {
    "php": "^8.1",
-    "nesbot/carbon": "|~2",
-     "elasticsearch/elasticsearch": "^8.7",
+    "nesbot/carbon": "~2",
+    "elasticsearch/elasticsearch": "^8.7"
   },
   "require-dev": {
      "phpunit/phpunit": "^10.0",
-     "mockery/mockery": "^1.5",
+     "mockery/mockery": "^1.5"
   },
   "autoload": {
     "psr-4": {
-      "Elasticquent\\": "src/"
+      "Elasticquent\\": "./src"
     }
   },
   "extra": {
     "branch-alias": {
       "dev-master": "0.0.1-dev"
+    }
+  },
+  "config": {
+    "allow-plugins": {
+      "php-http/discovery": true
     }
   }
 }
